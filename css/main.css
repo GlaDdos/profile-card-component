@@ -1,0 +1,100 @@
+* {
+
+}
+body {
+    height: 100vh;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: top -250px left -250px, bottom -250px right -250px;
+    background-repeat: no-repeat;
+    background-size: 550px;
+}
+
+section{
+    padding-top: 50%;
+}
+
+.card {
+    color: hsl(229, 23%, 23%);
+    border-radius: 15px;
+    margin: 0 auto;
+
+    max-width: 330px;
+
+    -webkit-box-shadow: -9px 20px 46px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -9px 20px 46px -11px rgba(66, 68, 90, 1);
+    box-shadow: -9px 20px 46px -11px rgba(66, 68, 90, 1);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0;
+    height: 140px;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-body {
+    padding: 70px 0 20px 0;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.card-body > p {
+    margin: 0;
+}
+
+.avatar {
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 50%;
+    width: 100px;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.stats {
+    border-top: 1px solid hsl(0, 0%, 93%);
+    padding-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-count {
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-name {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.gray {
+    color: hsl(227, 10%, 46%)
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-position: top -250px left -250px, bottom -250px right -250px;
+        background-repeat: no-repeat;
+        background-size: 800px;
+    }
+
+    section {
+        padding-top: 15%;
+    }
+}
